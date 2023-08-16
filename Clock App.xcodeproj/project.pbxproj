@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8C1F07E52A8CDF8300E7D6B4 /* Clock_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F07E42A8CDF8300E7D6B4 /* Clock_AppApp.swift */; };
-		8C1F07E72A8CDF8300E7D6B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F07E62A8CDF8300E7D6B4 /* ContentView.swift */; };
+		8C1F07E72A8CDF8300E7D6B4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F07E62A8CDF8300E7D6B4 /* StopwatchView.swift */; };
 		8C1F07E92A8CDF8500E7D6B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F07E82A8CDF8500E7D6B4 /* Assets.xcassets */; };
 		8C1F07EC2A8CDF8500E7D6B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1F07EB2A8CDF8500E7D6B4 /* Preview Assets.xcassets */; };
 		8C1F07F62A8CDF8500E7D6B4 /* Clock_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F07F52A8CDF8500E7D6B4 /* Clock_AppTests.swift */; };
 		8C1F08002A8CDF8500E7D6B4 /* Clock_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F07FF2A8CDF8500E7D6B4 /* Clock_AppUITests.swift */; };
 		8C1F08022A8CDF8500E7D6B4 /* Clock_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F08012A8CDF8500E7D6B4 /* Clock_AppUITestsLaunchTests.swift */; };
+		8C1F08102A8CFBB400E7D6B4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F080F2A8CFBB400E7D6B4 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		8C1F07E12A8CDF8300E7D6B4 /* Clock App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1F07E42A8CDF8300E7D6B4 /* Clock_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_AppApp.swift; sourceTree = "<group>"; };
-		8C1F07E62A8CDF8300E7D6B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C1F07E62A8CDF8300E7D6B4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		8C1F07E82A8CDF8500E7D6B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C1F07EB2A8CDF8500E7D6B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C1F07F12A8CDF8500E7D6B4 /* Clock AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clock AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		8C1F07FB2A8CDF8500E7D6B4 /* Clock AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clock AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1F07FF2A8CDF8500E7D6B4 /* Clock_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_AppUITests.swift; sourceTree = "<group>"; };
 		8C1F08012A8CDF8500E7D6B4 /* Clock_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C1F080F2A8CFBB400E7D6B4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				8C1F07E42A8CDF8300E7D6B4 /* Clock_AppApp.swift */,
-				8C1F07E62A8CDF8300E7D6B4 /* ContentView.swift */,
+				8C1F080F2A8CFBB400E7D6B4 /* MainView.swift */,
+				8C1F080E2A8CFB5F00E7D6B4 /* Stopwatch */,
 				8C1F07E82A8CDF8500E7D6B4 /* Assets.xcassets */,
 				8C1F07EA2A8CDF8500E7D6B4 /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				8C1F08012A8CDF8500E7D6B4 /* Clock_AppUITestsLaunchTests.swift */,
 			);
 			path = "Clock AppUITests";
+			sourceTree = "<group>";
+		};
+		8C1F080E2A8CFB5F00E7D6B4 /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F07E62A8CDF8300E7D6B4 /* StopwatchView.swift */,
+			);
+			path = Stopwatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C1F07E72A8CDF8300E7D6B4 /* ContentView.swift in Sources */,
+				8C1F07E72A8CDF8300E7D6B4 /* StopwatchView.swift in Sources */,
+				8C1F08102A8CFBB400E7D6B4 /* MainView.swift in Sources */,
 				8C1F07E52A8CDF8300E7D6B4 /* Clock_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
