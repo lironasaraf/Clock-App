@@ -15,6 +15,12 @@ struct MainView: View {
                     Image(systemName: "stopwatch")
                     Text("Stopwatch")
                 }
+            
+            AlarmView()
+                .tabItem {
+                    Image(systemName: "alarm")
+                    Text("Alarm")
+                }
         }
     }
 }
