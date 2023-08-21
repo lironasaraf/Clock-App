@@ -12,7 +12,7 @@ struct AddAlarmView: View {
     @Binding var alarms: [Alarm]
     @State private var date = Date()
     @State private var label = ""
-   // @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss
 
     
     var body: some View {
@@ -34,7 +34,7 @@ struct AddAlarmView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button{
                         alarms.append(Alarm(time: date,label: label, isOn: true))
-                    //    dismiss()
+                       dismiss()
                     } label: {
                         Text("Save")
                             .font(.title3)
